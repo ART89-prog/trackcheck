@@ -59,12 +59,60 @@ $(() => {
 	// }
 
 
-  $('select').niceSelect();
-
-
   $('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
+  // Табы
+	var locationHash = window.location.hash
 
+	$('body').on('click', '.tabs button', function (e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			const $parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				$activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			$parent.find('.tabs:first button').removeClass('active')
+			$parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			$activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+			$activeTabContent = $(locationHash),
+			$parent = $activeTab.closest('.tabs_container'),
+			level = $activeTab.data('level')
+
+		$parent.find('.tabs:first button').removeClass('active')
+		$parent.find('.tab_content.' + level).removeClass('active')
+
+		$activeTab.addClass('active')
+		$activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+	}
+
+
+  	// Аккордион
+	$('body').on('click', '.accordion .accordion_item .head', function (e) {
+		e.preventDefault()
+
+		const $item = $(this).closest('.accordion_item'),
+			$accordion = $(this).closest('.accordion')
+
+		if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}
+	})
 
   	// Скрол к пунктам меню
 	$(".scroll").on("click", function(e){
@@ -81,150 +129,7 @@ $(() => {
 
 
 
-
-  $('.show-more').click(function(){
-		$('.hide-content').slideToggle(300); 
-    $('.show-more').remove();     
-		return false;
-	});
-
-      // Слайдер Услуги
-
-      const serviceSliders = [],
-      service = document.querySelectorAll('.service .swiper')
-  
-      service.forEach(function (el, i) {
-      el.classList.add('service_s' + i)
-  
-      let options = {
-        loop: true,
-        speed: 500,
-        watchSlidesProgress: true,
-        slideActiveClass: 'active',
-        slideVisibleClass: 'visible',
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'bullets',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        preloadImages: false,
-        lazy: {
-          enabled: true,
-          checkInView: true,
-          loadOnTransitionStart: true,
-          loadPrevNext: true
-        },
-        breakpoints: {
-          0: {
-            spaceBetween: 0,
-            slidesPerView: 1
-          },
-          480: {
-            spaceBetween: 0,
-            slidesPerView: 1
-          },
-          768: {
-            spaceBetween: 20,
-            slidesPerView: 2
-          },
-          1280: {
-            spaceBetween: 30,
-            slidesPerView: 3
-          }
-        },
-        on: {
-          init: swiper => {
-            setTimeout(() => setHeight($(swiper.$el).find('.swiper-slide')))
-          },
-          resize: swiper => {
-            setTimeout(() => {
-              $(swiper.$el).find('.swiper-slide').height('auto')
-              setHeight($(swiper.$el).find('.swiper-slide'))
-            })
-          }
-        }
-      }
-  
-      serviceSliders.push(new Swiper('.service_s' + i, options))
-    })
-
-
-
-     // Слайдер Работы
-
-     const worksSliders = [],
-     works = document.querySelectorAll('.works .swiper')
- 
-     works.forEach(function (el, i) {
-     el.classList.add('works_s' + i)
- 
-     let options = {
-       loop: true,
-       speed: 500,
-       watchSlidesProgress: true,
-       slideActiveClass: 'active',
-       slideVisibleClass: 'visible',
-       pagination: {
-         el: '.swiper-pagination2',
-         type: 'bullets',
-         clickable: true,
-       },
-       navigation: {
-         nextEl: '.swiper-button-next2',
-         prevEl: '.swiper-button-prev2'
-       },
-       preloadImages: false,
-       lazy: {
-         enabled: true,
-         checkInView: true,
-         loadOnTransitionStart: true,
-         loadPrevNext: true
-       },
-       breakpoints: {
-         0: {
-           spaceBetween: 20,
-           slidesPerView: 2
-         },
-         480: {
-           spaceBetween: 20,
-           slidesPerView: 2
-         },
-         768: {
-           spaceBetween: 20,
-           slidesPerView: 3
-         },
-         1023: {
-          spaceBetween: 20,
-          slidesPerView: 3
-        },
-         1280: {
-           spaceBetween: 30,
-           slidesPerView: 4
-         }
-       },
-       on: {
-         init: swiper => {
-           setTimeout(() => setHeight($(swiper.$el).find('works .swiper-slide')))
-         },
-         resize: swiper => {
-           setTimeout(() => {
-             $(swiper.$el).find('.works .swiper-slide').height('auto')
-             setHeight($(swiper.$el).find('.works .swiper-slide'))
-           })
-         }
-       }
-     }
- 
-     worksSliders.push(new Swiper('.works_s' + i, options))
-   })
-
-
-
-
+   
     
 
    window.addEventListener('resize', function () {

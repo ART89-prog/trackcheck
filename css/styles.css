@@ -582,3 +582,100 @@ header .close_btn img {
 .about ul li:nth-child(3) {
     text-align: end;
 }
+
+
+
+.services {
+    background: #EFF5F3;
+    padding: 106px 0 162px;
+}
+.services_title {
+    margin-bottom: 56px;
+}
+.services_item {
+    display: flex;
+    padding-bottom: 102px;
+    border-bottom: 2px solid rgb(45%, 81%, 72%, .6);
+    margin-bottom: 100px;
+}
+.services_item:last-child {
+    margin-bottom: 0;
+}
+.services_item-img {
+    margin-right: 20px;
+}
+.services_item-text {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: #242424;    
+}
+.services_item-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.services_item-logo img {
+    display: block;
+    margin-right: 42px;
+}
+.services_item-logo img:last-child {
+    margin-right: 0;
+}
+.services_item ol {
+    counter-reset: step;
+    list-style: none;
+}
+.services_item ol li {
+   position: relative; 
+   margin-bottom: 51px;
+}
+.services_item ol li:last-child {
+    margin-bottom: 0;
+}
+.services_item ol li:before {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    position: absolute;
+    top: -29px;
+    left: 0;
+    width: 29px;
+    height: 22px;
+    background: #74CEB7;
+    border-radius: 2px;
+    content: counters(step, '') '';
+    counter-increment: step;
+    text-align: center;
+}
+
+
+
+
+
+
+.faq .tab_content.active {
+    visibility: visible;
+    overflow: visible;
+    height: auto;
+    transition: opacity .5s linear;
+    pointer-events: auto;
+    opacity: 1;
+}
+.faq .tab_content {
+    position: relative;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+.accordion .accordion_item .data {
+    display: none;
+}
+.accordion .accordion_item.active .data {
+    display: block;
+}
