@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Подключение шрифтов -->
+	
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#DE041D">
+		<meta name="theme-color" content="#DE041D">
+
+		
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">		
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1370.css" media="print, (max-width: 1370px)">
+		<link rel="stylesheet" href="css/response_1300.css" media="print, (max-width: 1300px)">
+		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>									
+					<div class="header_top">
+						<div class="cont">		
+							<button class="mob_menu_btn">
+								<img src="images/mob_menu.png" alt="">
+							</button>
+							<button class="close_btn">
+								<img src="images/close.svg" alt="">
+							</button>
+							<div class="header-box">
+								<div class="header-box_left">
+									<a href="tel:79217779076">+7 (921) 777-90-76</a>
+									<a href="tel:79111377070">+7 (911) 137-70-70</a>
+									<span>Звоните с 9:00 до 18:00 МСК</span>
+								</div>
+								<div class="header-box_right">
+									<a href="mailto:info@track-check.ru" class="header-email">info@track-check.ru</a>
+									<div class="header-soc">
+										<a href="#">
+											<img src="images/watsapp.svg" alt="">
+										</a>
+										<a href="#">
+											<img src="images/telegramm.svg" alt="">
+										</a>
+									</div>
+									<button class="btn modal_link" data-content="#modal_callback">
+										<span>Заказать звонок</span>
+									</button>
+								</div>
+							</div>
+						</div>	
+					</div>
+
+					<div class="header_bottom">
+						<div class="header_nav">
+							<div class="cont">
+								<a href="index.html" class="header_logo">
+									<img src="images/logo.svg" alt="">
+								</a>
+								<nav class="menu">
+									<div class="item">
+										<a href="#about" class="scroll">о компании</a>
+									</div>
+									<div class="item">
+										<a href="#service"class="scroll">Портфель услуг</a>
+									</div>
+									<div class="item">
+										<a href="#works" class="scroll">наши партнеры</a>
+									</div>
+									<div class="item">
+										<a href="#advantages" class="scroll">почему мы</a>
+									</div>
+									<div class="item">
+										<a href="#contacts" class="scroll">Контакты</a>
+									</div>	
+								</nav>		
+							</div>
+						</div>
+								
+						<div class="header_info">
+							<div class="cont">
+								<div class="header_info-wrap">
+									<div class="header_info-title">Сервисное обслуживание и ремонт дозирующего оборудования</div>
+									<div class="header_info-text">Федеральный поставщик услуг, аутсорсинг под текущие потребности, гарантия на выполненные работы</div>
+								</div>
+								<div class="header_info-img">
+									<img src="images/header_img.png" alt="">
+								</div>
+							</div>
+						</div>	
+					</div>
+				</header>
+
+
+
+
+
+			<footer>
+				<div class="cont">
+					
+				</div>
+			</footer>
+
+
+			<div class="overlay"></div>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<section class="modal_callback" id="modal_callback" style="display: none;">
+			<form>
+				<div class="modal_callback-title">Сделать заказ</div>
+				<div class="line">
+					<div class="field">
+						<label for="name">Имя</label>
+						<input type="text" id="name">
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<label for="phone">Телефон</label>
+						<input type="tel" id="phone">
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<label for="email">E-mail</label>
+						<input type="email" id="email">
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<label for="select">Выберите услугу</label>
+						<select id="select">
+							<option value="1">Витраж дверей шкафов купе</option>
+							<option value="2">Витраж ниш и перегородок</option>
+							<option value="3">Витраж кухонных фасадов</option>
+							<option value="4">Витраж окон</option>
+							<option value="5">Витраж потолков</option>
+							<option value="6">Витраж вставок в двери</option>
+							<option value="7">Витраж зеркал и стеклянных столов</option>
+							<option value="8">Витраж декоративных панно и картин</option>
+						</select>
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<label for="textarea">Дополнительный текст</label>
+						<textarea id="textarea"></textarea>
+					</div>
+				</div>
+				<button>
+					<span>Отправить сообщение</span>
+				</button>
+			</form>
+		</section>
+
+		
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/inputmask.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+
+
+		<script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+		<script>
+			$(window).on('load', () => {
+				ymaps.ready(() => {
+					let myMap = new ymaps.Map('map', {
+						center: [58.60285956584672,49.64622049999997],
+						zoom: 16,
+						controls: []
+					})
+							
+					// Кастомный маркер
+					let myPlacemark = new ymaps.Placemark([58.60285956584672,49.64622049999997], {}, {
+						iconLayout : 'default#image',
+						iconImageHref : 'images/marker.svg',
+						iconImageSize : [43, 50],
+						/*iconImageOffset : [-116, -172]*/
+					})
+	
+					myMap.geoObjects.add(myPlacemark)
+	
+					myMap.controls.add('zoomControl', {
+						position : {
+							right : '20px',
+							top   : '20px'
+						}
+					})
+					myMap.behaviors.disable('scrollZoom')
+				})
+			})
+		</script>
+
+	</body>
+</html>
