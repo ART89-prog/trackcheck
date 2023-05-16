@@ -1,77 +1,87 @@
 .swiper-button-next,
 .swiper-button-prev
 {
-    color: rgba(255, 255, 255, .24);
+    color: #de041d;
 
+    top: auto;
+    bottom: 0;
 
-    bottom: 50%;
+    display: block;
 
-    display: flex;
+    width: 60px;
+    height: 60px;
+    margin: 0;
 
-    width: 32px;
-    height: 32px;
-    margin: 0 0 32px;
-
-    transition: color .2s linear;
+    transition: .2s linear;
     transform: none;
 
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    background: #fff;
 }
 
 .swiper-button-prev
 {
-    left: calc(50% - 670px);
-    margin: 0;
+    right: 60px;
+    left: auto;
 }
 
 .swiper-button-next
 {
-    left: calc(50% + 620px);
-    margin: 0;
+    right: 0;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after
 {
-    display: none;
-}
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 7px;
 
-
-.swiper-button-next .icon,
-.swiper-button-prev .icon
-{
     display: block;
 
-    width: 11px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-top: 2px solid;
+    border-left: 2px solid;
 }
 
-
-
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+.swiper-button-next:after
 {
-    margin: 0;
+    left: -7px;
+
+    transform: rotate(-225deg);
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    color: #fff;
+
+    background: #de041d;
 }
 
 
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction
 {
     position: absolute;
-    bottom: -33px;
-    left: 0;
+    bottom: 33px;
+    left: 50%;
 
     display: flex;
 
-    width: 100%;
-    height: 11px;
+    width: auto;
+    height: 4px;
+    margin-left: 152px;
 
     pointer-events: none;
 
@@ -85,28 +95,27 @@
 {
     display: block;
 
-    width: 11px;
-    height: 11px;
+    width: 4px;
+    height: 4px;
 
     transition: .2s linear;
     pointer-events: auto;
 
     opacity: 1;
-    border: 2px solid #0098ff;
     border-radius: 50%;
-    background: #0098ff;
+    background: #fff;
 }
 
 .swiper-pagination-bullet + .swiper-pagination-bullet
 {
-    margin-left: 27px !important;
+    margin-left: 15px !important;
 }
 
 .swiper-pagination-bullet:hover,
 .swiper-pagination-bullet.active
 {
-    border-color: #0098ff;
-    background: #fff;
+    background: transparent;
+    box-shadow: 0 0 0 2px #de041d;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
