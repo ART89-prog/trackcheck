@@ -335,10 +335,10 @@
         padding: 0px;
     }
     .swiper-button-prev {
-        right: -15px;
+        left: -15px;
     }
     .swiper-button-next {
-        left: -15px;
+        right: -15px;
     }
 
 
