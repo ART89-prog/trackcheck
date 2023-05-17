@@ -52,11 +52,11 @@ $(() => {
 		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
 	}
 
-	// Fancybox.defaults.template = {
-	// 	closeButton: '<img src=../images/close.png>',
-	// 	spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
-	// 	main: null
-	// }
+	Fancybox.defaults.template = {
+		closeButton: '<img src=../images/close2.svg>',
+		// spinner: '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="25 25 50 50" tabindex="-1"><circle cx="50" cy="50" r="20"/></svg>',
+		// main: null
+	}
 
 
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
@@ -120,38 +120,12 @@ $(() => {
 		let id = $(this).attr("href");
 
 		$("html, body").animate({
-			scrollTop: $(id).offset().top - 50
+			scrollTop: $(id).offset().top
 		}, {
-			duration: 1500,
+			duration: 400,
 			easing: "swing"
 		});
 	});
-
-
-
-
-	// const swiper = new Swiper('.swiper-container', {
-	// 	slidesPerView: 7,
-	// 	spaceBetween: 42,
-	// 	navigation: {
-	// 		nextEl: '.swiper-button-next',
-	// 		prevEl: '.swiper-button-prev',
-	// 	},
-	// 	breakpoints: {
-	// 		320: {
-	// 			slidesPerView: 2,
-	// 			spaceBetween: 20
-	// 		},
-	// 		480: {
-	// 			slidesPerView: 3,
-	// 			spaceBetween: 30
-	// 		},
-	// 		640: {
-	// 			slidesPerView: 6,
-	// 			spaceBetween: 42
-	// 		}
-	// 	}
-	// })
 
 
 

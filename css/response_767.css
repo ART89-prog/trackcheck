@@ -6,12 +6,12 @@
     }
     header .mob_menu_btn {
         display: flex;
-        order: -1;
+        order: 1;
     }
     header .menu {
         position: fixed;
         z-index: 107;
-        top: 49px;
+        top: 0;
         left: 0;
 
         display: flex;
@@ -23,12 +23,12 @@
         min-height: -webkit-fill-available;
         min-height:         fill-available;
         margin: 0;
-        padding: 0px 20px;
+        padding: 40px 20px 46px;
 
         transition: transform .3s linear;
         transform: translateX(-100%);
 
-        background: #2A292F;
+        background: #fff;
 
         justify-content: flex-start;
         align-items: flex-start;
@@ -47,6 +47,7 @@
     header .menu .item {
         width: 100%;
         margin-right: 0;
+        margin-bottom: 34px;
     }
     header .menu .item + .item {
         margin-left: 0;
@@ -101,15 +102,66 @@
     }
     .menu_open header .close_btn {
         display: block;
-        top: 8px;
-        right: 30px;
+        top: 0px;
+        right: 0px;
+        z-index: 999;
+        position: absolute;
     }
     .mob_menu_btn {
-        width: 45px;
+        width: 60px;
     }
     .mob_menu_btn img {
-        width: 24px;
+        width: 60px;
     }
+
+
+    .modal_callback-title.modal_callback-title-mob {
+        display: block;
+    }
+    .modal_callback-title {
+        display: none;
+    }
+    .modal_form .line.dn {
+        display: none;
+    }
+    .header_bottom {
+        padding-top: 20px;
+    }
+    .header-box_left,
+    .header-box_right {
+        display: none;
+    }
+    .header-box_left-mob, 
+    .header-box_right-mob {
+        display: block;
+    }
+    .header-box_left-mob.header-box_left {
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .header-box_right.header-box_right-mob {
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .header-box_right.header-box_right-mob .btn {
+        order: -1;
+        margin-bottom: 48px;
+    }
+    .header-email {
+        order: 1;
+    }
+
   
 
 

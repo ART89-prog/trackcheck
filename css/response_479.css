@@ -4,6 +4,10 @@
         --font_size: 14px;
         --font_size_title: 32px;
     }
+
+    .header_logo-mob img {
+        width: 174px;
+    }
  
 
    

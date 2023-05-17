@@ -1,8 +1,52 @@
 @media print, (max-width: 1187px) {
 
-    :root {
-        --font_size: 16px;
-        --font_size_title: 40px;
+    .header-email {
+        margin-left: 15px;
+    }
+    .header-box_left span {
+        margin-left: 15px;
+    }
+    .header-box_right {
+        width: calc(100% - 530px);
+    }
+    .header-box_left {
+        padding: 15px 15px 15px 0px;
+        border-width: 0px 1px 0px 0px;
+    }
+    .header_nav .menu {
+        width: calc(100% - 320px);
+    }
+    .advantages_item-text br {
+        display: none;
+    }
+    .footer-email {
+        margin-left: 15px;
+    }
+    .footer-box_left span {
+        margin-left: 15px;
+    }
+    .footer-box_right {
+        width: calc(100% - 530px);
+    }
+    .footer-box_left {
+        padding: 15px 15px 15px 0px;
+        border-width: 0px 1px 0px 0px;
+    }
+    .footer_nav .menu {
+        width: calc(100% - 320px);
+    }
+    .contacts_phone {
+        flex-direction: column;
+    }
+    .contacts_phone a + a {
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    .contacts_info {
+        max-width: 410px;
+    }
+    .contacts_form {
+        width: calc(100% - 440px);
     }
 
 
