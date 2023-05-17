@@ -286,6 +286,7 @@
     }
     .contacts_phone {
         flex-direction: column;
+        align-items: flex-start;
     }
     .contacts_phone a + a {
         margin-left: 0px;

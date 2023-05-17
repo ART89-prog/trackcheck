@@ -17,7 +17,10 @@
     }
     .header-box_right.header-box_right-mob .btn {
         width: 100%;
-    }    
+    }  
+    .services_item-logo img {
+        width: 25%;
+    }  
  
 
    

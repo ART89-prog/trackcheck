@@ -808,8 +808,7 @@ header .close_btn img {
 }
 .swiper-button-next, 
 .swiper-button-prev {
-    top: 50%;
-    transform: translateY(-50%);
+    top: 35%;
     display: block;
     width: 36px;
     height: 26px;
