@@ -41,6 +41,9 @@
     .contacts_phone {
         margin-left: 28px;
     }
+    .contacts_form .btn {
+        width: 100%;
+    }
 
    
 }
