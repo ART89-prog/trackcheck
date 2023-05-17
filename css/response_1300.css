@@ -9,6 +9,15 @@
     .swiper-wrapper {
         padding: 0 80px;
     }
+    .about::after {
+        left: 20px;
+    }
+    .services::after {
+        right: 20px;
+    }
+    .partners::after {
+        left: 20px;
+    }
 
 
 }

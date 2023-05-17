@@ -44,6 +44,15 @@
     .contacts_form .btn {
         width: 100%;
     }
+    .about::after {
+        left: 30px;
+    }
+    .services::after {
+        right: 30px;
+    }
+    .partners::after {
+        left: 30px;
+    }
 
    
 }
