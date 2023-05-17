@@ -712,6 +712,11 @@ header .close_btn img {
 .services_item ol li {
    position: relative; 
    margin-bottom: 54px;
+   font-family: var(--font_family2);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--text_color);
 }
 .services_item ol li:last-child {
     margin-bottom: 0;

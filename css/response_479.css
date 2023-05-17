@@ -10,7 +10,8 @@
     }
     .contacts_mail {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start
+        ;
     }
     .modal_callback {
         padding: 40px 20px 46px;
@@ -21,7 +22,25 @@
     .services_item-logo img {
         width: 25%;
     }  
- 
+    .header_info-text {
+        max-width: 300px;
+    }
+    .about_text {
+        text-align: start;
+    }
+    .about ul li {
+        text-align: start;
+    }
+    .about ul li:nth-child(3) {
+        margin-top: 20px;
+        margin-bottom: 55px;
+    }
+    .cont {
+        padding: 0 30px;
+    }
+    .contacts_phone {
+        margin-left: 28px;
+    }
 
    
 }
