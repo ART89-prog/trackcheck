@@ -138,6 +138,7 @@ $(() => {
 		let options = {
 			loop: true,
 			speed: 500,
+			slidesPerView:'auto',
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',

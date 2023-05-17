@@ -988,6 +988,9 @@ header .close_btn img {
 .faq_title {
     margin-bottom: 68px;
 }
+.faq_text {
+    display: none;
+}
 .tabs_container {
     display: flex;
 }

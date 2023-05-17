@@ -208,7 +208,7 @@
         padding-top: 42px;
     }
     .cont {
-        padding: 0 30px;
+        padding: 0 20px;
     }
     .header_info-wrap {
         margin-right: 0px;
@@ -247,6 +247,69 @@
     }
     .services_title {
         margin-bottom: 45px;
+    }
+    .tabs_container {
+        flex-direction: column;
+    }
+    .tabs_container .tabs {
+        margin-right: 0;
+        width: 100%;
+    }
+    .faq .tab_content {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .accordion_item .head {
+        flex-direction: column-reverse;
+    }
+    .accordion_item .head .title {
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    .accordion_item .data {
+        padding-left: 0;
+    }
+    .faq_title {
+        margin-bottom: 38px;
+    }
+    .faq {
+        padding: 109px 0 80px;
+    }
+    .faq_text {
+        display: block;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #242424;
+        margin-bottom: 20px;
+    }
+    .contacts_phone {
+        flex-direction: column;
+    }
+    .contacts_phone a + a {
+        margin-left: 0px;
+        margin-top: 22px;
+    }
+    .contacts_phone {
+        padding: 0;
+        border: none;
+    }
+    .contacts_mail a,
+    .contacts_phone a {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .contacts_form .btn {
+        width: 100%;
+    }
+    .contacts_mail {
+        margin-bottom: 29px;
+    }
+    .contacts_text {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 28px;
     }
 
   
