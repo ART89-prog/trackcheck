@@ -1,8 +1,8 @@
 @media print, (max-width: 767px) {
 
     :root {
-        --font_size: 15px;
-        --font_size_title: 36px;
+        --font_size: 14px;
+        --font_size_title: 22px;
     }
     header .mob_menu_btn {
         display: flex;
@@ -124,9 +124,6 @@
     .modal_form .line.dn {
         display: none;
     }
-    .header_bottom {
-        padding-top: 20px;
-    }
     .header-box_left,
     .header-box_right {
         display: none;
@@ -160,6 +157,96 @@
     }
     .header-email {
         order: 1;
+    }
+    .footer-box_right {
+        flex-direction: column;
+    }
+    footer {
+        padding-top: 103px;
+        padding-bottom: 73px;
+    }
+    .footer-email {
+        margin-bottom: 15px;
+    }
+    .footer-box_right {
+        padding-bottom: 30px;
+    }
+    .footer-soc {
+        margin-bottom: 15px;
+    }
+    .footer-box_left {
+        flex-direction: column;
+    }
+    .footer-box_left span {
+        margin-left: 0px;
+    }
+    .footer-box_left a {
+        margin-bottom: 6px;
+    }
+    .footer-box_left span {
+        margin-top: 12px;
+    }
+    .footer_nav .menu {
+        flex-direction: column;
+    }
+    .footer_nav .menu .item {
+        margin-bottom: 34px;
+        display: block;
+    }
+    .footer_nav .menu .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .header_info-img {
+        width: 207px;
+        height: 276px;
+    }
+    .header_info .cont {
+        flex-direction: column;
+    }
+    .header_bottom {
+        padding-top: 42px;
+    }
+    .cont {
+        padding: 0 30px;
+    }
+    .header_info-wrap {
+        margin-right: 0px;
+        margin-bottom: 22px;
+    } 
+    .header_info-title {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+    .header-box {
+        padding: 36px 0px;
+    }
+    .about_text {
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+    .about ul li {
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 63px;
+    } 
+    .about ul li:before {
+        top: -32px;
+    }
+    .about ul li:nth-child(3) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about {
+        padding: 80px 0 111px;
+    }
+    .services {
+        padding: 68px 0 99px;
+    }
+    .services_title {
+        margin-bottom: 45px;
     }
 
   

@@ -766,6 +766,14 @@ header .close_btn img {
     line-height: 17px;
     color: #545454;
 }
+.advantages_item-icon {
+    width: 64px;
+    height: 64px;
+}
+.advantages_item-icon img {
+    width: 100%;
+    height: 100%;
+}
 
 
 

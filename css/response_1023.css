@@ -141,7 +141,9 @@
     }
     .footer-box_right {
         width: 100%;
-        border-width: 0px 0px 0px 0px;
+        border-width: 0px 0px 1px 0px;
+        order: -1;
+        margin-bottom: 10px;
     }
     .footer-box_left {
         padding: 15px 0px;
@@ -157,6 +159,9 @@
     }
     .footer_logo {
         margin-top: 50px;
+    }
+    .footer_nav .menu {
+        width: 100%;
     }
         
   
