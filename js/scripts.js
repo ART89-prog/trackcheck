@@ -139,6 +139,7 @@ $(() => {
 			loop: true,
 			speed: 500,
 			slidesPerView:'auto',
+			spaceBetween: 42,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
@@ -150,24 +151,20 @@ $(() => {
 
 			breakpoints: {
 				0: {
-					spaceBetween: 10,
+					spaceBetween: 0,
 					slidesPerView: 1
 				},
 				480: {
-					spaceBetween: 10,
-					slidesPerView: 2
+					spaceBetween: 50,
 				},
 				768: {
-					spaceBetween: 14,
-					slidesPerView: 3
+					spaceBetween: 50,
 				},
 				1023: {
-					spaceBetween: 14,
-					slidesPerView: 4
+					spaceBetween: 50,
 				},
 				1280: {
-					spaceBetween: 10,
-					slidesPerView: 5
+					spaceBetween: 42,
 				}
 			}
 		}

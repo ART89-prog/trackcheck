@@ -595,6 +595,9 @@ header .close_btn img {
     position: relative;
     text-align: justify;
 }
+.about ul li span {
+    font-weight: 700;
+}
 .about ul li:last-child {
     margin-bottom: 0;
 }
@@ -821,10 +824,10 @@ header .close_btn img {
     background: none;
 }
 .swiper-button-next {
-    right: -66px;
+    left: -66px;
 } 
 .swiper-button-prev {
-    left: -66px;
+    right: -66px;
 }
 .swiper-container {
     overflow: visible !important;
@@ -832,7 +835,11 @@ header .close_btn img {
 .swiper-slide.visible {
     visibility: visible;
     pointer-events: auto;
-    opacity: 1;
+    opacity: 1;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
 .swiper-slide {
     position: relative;

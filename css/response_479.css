@@ -2,12 +2,22 @@
 
     :root {
         --font_size: 14px;
-        --font_size_title: 32px;
+        --font_size_title: 22px;
     }
 
     .header_logo-mob img {
         width: 174px;
     }
+    .contacts_mail {
+        display: flex;
+        justify-content: center;
+    }
+    .modal_callback {
+        padding: 40px 20px 46px;
+    }
+    .header-box_right.header-box_right-mob .btn {
+        width: 100%;
+    }    
  
 
    

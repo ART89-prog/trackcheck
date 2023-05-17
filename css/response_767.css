@@ -311,6 +311,38 @@
         line-height: 22px;
         margin-bottom: 28px;
     }
+    .advantages_title {
+        margin-bottom: 50px;
+    }
+    .advantages_items {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .advantages_items > * {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+    .advantages_item + .advantages_item {
+        margin-top: 42px;
+    }
+    .services_item-logo img {
+        margin-right: 10px;
+        width: 25%;
+    }
+    .services_item {
+        padding-bottom: 48px;
+    }
+    .swiper-wrapper {
+        padding: 0px;
+    }
+    .swiper-button-prev {
+        right: -15px;
+    }
+    .swiper-button-next {
+        left: -15px;
+    }
+
 
   
 
